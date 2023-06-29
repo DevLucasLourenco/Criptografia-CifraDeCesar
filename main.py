@@ -29,7 +29,7 @@ class Criptografia():
 
 
 def criptografar_codigo():
-    with open('teste2.py', 'r') as f:
+    with open('teste1.py', 'r') as f:
         texto_pegando = f.read()
 
     print(texto_pegando)
@@ -37,12 +37,12 @@ def criptografar_codigo():
     res = c.criptografar(texto_pegando, k)
     res2 = c.mensagem_criptografada
     
-    with open('teste3.py', 'w') as f:
+    with open('teste2.py', 'w') as f:
         f.write(res2)
         
         
 def descriptografar_codigo():
-    with open('teste3.py', 'r') as f:
+    with open('teste2.py', 'r') as f:
         texto_pegando2 = f.read()
 
     print(texto_pegando2)
@@ -50,7 +50,7 @@ def descriptografar_codigo():
     res = c.descriptografar(texto_pegando2, k)
     res2 = c.mensagem_criptografada
     
-    with open('teste4.py', 'w') as f:
+    with open('teste3.py', 'w') as f:
         f.write(res2)
       
       
